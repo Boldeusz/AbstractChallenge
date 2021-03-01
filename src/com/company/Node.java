@@ -5,14 +5,17 @@ public class Node extends ListItem {
         super(value);
     }
 
+    @Override
     ListItem next() {
         return this.rightLink;
     }
 
+    @Override
     ListItem setNext(ListItem item) {
         this.rightLink = item;
         return this.rightLink;
     }
+
 
     @Override
     ListItem previous() {
